@@ -7,11 +7,14 @@ info:
     name: MIT
 
 servers:
-  - url: https://{tenantName}.nonemployee.com/api
+  - url: https://{tenantName}.{tenantDomain}
     variables:
       tenantName:
         default: acmeco
         description: Tenant name assigned to customer
+      tenantDomain:
+        default: mynonemployee.com
+        description: Domain for the customers tenant
 
 paths:
 # Users
